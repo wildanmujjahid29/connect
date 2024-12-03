@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <link rel="stylesheet" href="css\style.css" />
+    <script src="js\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2"></script>
+    <div id="tsparticles" class="absolute top-0 left-0 w-full h-full z-0"></div>
+    <script src="js\snow.js"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-cover bg-fixed flex items-center justify-center min-h-screen dark:bg-gray-900"
+  >
+    <div
+      class="relative bg-white/70 backdrop-blur-lg dark:bg-gray-800/70 shadow-md rounded-lg p-6 w-80 effect-snow"
+    >
+      <!-- Toggle Dark Mode -->
+      <div class="text-right mb-4">
+        <button
+          onclick="document.documentElement.classList.toggle('dark')"
+          class="text-gray-500 dark:text-gray-300 focus:outline-none"
+        >
+          <i class="fas fa-sun"></i>
+          <!-- Ikon berubah sesuai mode -->
+        </button>
+      </div>
+
+      <!-- Profile Section -->
+      <div class="text-center mb-6">
+        <img
+          src="img/me2.png"
+          alt="Profile Picture"
+          class="w-30 h-40 rounded-full mx-auto"
+        />
+        <h1 class="mt-1 text-xl font-semibold text-gray-800 dark:text-gray-100">
+          Wildan Mujjahid Robbani
+        </h1>
+        <p class="text-gray-500 dark:text-gray-400">
+          Data Science & Web Developer Enthusiast
+        </p>
+      </div>
+
+      <!-- Links Section -->
+      <div class="space-y-4">
+        <a
+          href="https://www.linkedin.com/in/wildanmujjahid"
+          target="_blank"
+          class="block w-full text-center bg-blue-700 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition"
+        >
+          <i class="fab fa-linkedin mr-2"></i> LinkedIn
+        </a>
+        <a
+          href="https://github.com/wildanmjjhd29"
+          target="_blank"
+          class="block w-full text-center bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-900 transition"
+        >
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+        <a
+          href="https://public.tableau.com/app/profile/wildanmujjahid29"
+          target="_blank"
+          class="block w-full text-center bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+        >
+          <i class="fa-solid fa-chart-line mr-2"></i>Tableau Public
+        </a>
+
+        <a
+          href="mailto:mujjahidrobabani29@gmail.com"
+          class="block w-full text-center bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
+        >
+          <i class="fas fa-envelope mr-2"></i> Email Me
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

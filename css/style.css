@@ -1,0 +1,22 @@
+.effect-snow::before, .effect-rain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+.effect-snow::before {
+    background-image: url('https://www.transparenttextures.com/patterns/snow.png');
+    animation: snowfall 10s linear infinite;
+}
+.effect-rain::before {
+    background-image: url('https://www.transparenttextures.com/patterns/vertical-stripes-light.png');
+    animation: rainfall 2s linear infinite;
+}
+
+body.light-mode {
+    background: transparent !important; /* Mode terang transparan */
+}
